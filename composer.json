@@ -1,0 +1,25 @@
+{
+  "name": "nubium/covid19-vaccination-cert-validator",
+  "description": "Digital COVID Certificate Validator",
+  "license": "GPL-3.0-or-later",
+  "type": "library",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "Nubium\\DCCValidator\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7.4",
+    "ext-zlib": "*",
+    "ext-openssl": "*",
+    "spomky-labs/cbor-php": "^2.0",
+    "web-auth/cose-lib": "^3.3",
+    "composer/semver": "^3.2",
+    "mhauri/base45": "^0.1.1"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^1.4.2"
+  }
+}
